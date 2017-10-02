@@ -44,7 +44,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            py.test tests/
+            py.test NHLStats/tests
 
       - store_artifacts:
           path: test-reports
