@@ -1,10 +1,9 @@
 import pytest
 
-from nhl_stats.api.url_builder import URLBuilder
 
-
-@pytest.fixture
+@pytest.fixture()
 def url_builder():
+    from nhl_stats.api.url_builder import URLBuilder
     url_builder = URLBuilder()
     return url_builder
 

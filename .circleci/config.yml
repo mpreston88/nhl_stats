@@ -44,7 +44,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            py.test /home/circleci/nhl_stats/tests/
+            cd /home/circleci/nhl_stats
+            py.test tests/
 
       - store_artifacts:
           path: test-reports
