@@ -1,6 +1,6 @@
 from unittest.mock import patch
 import pytest
-from unittest.test.testmock.testmock import MagicMock
+from unittest.mock import MagicMock
 
 
 @pytest.fixture()
