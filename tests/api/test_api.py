@@ -1,12 +1,11 @@
 from unittest.mock import patch
-
-from nhl_stats.api.api import API
 import pytest
-from unittest.test.testmock.testmock import MagicMock
+from unittest.mock import MagicMock
 
 
 @pytest.fixture()
-def api() -> API:
+def api():
+    from nhl_stats.api.api import API
     api = API()
     return api
 
